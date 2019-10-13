@@ -1,0 +1,8 @@
+Feature: Play trailer
+
+  Scenario: Play trailer on homepage
+    Given I am on the homepage
+    And I play the video trailer
+    Then I want to play it
+      | Seconds |
+      | 20      |

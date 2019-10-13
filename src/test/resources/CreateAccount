@@ -1,0 +1,8 @@
+Feature: Create new account
+
+  Scenario: Create a new user account
+    Given I navigate to the Sign Up page
+    And I enter a unique username and password
+      |Username| Password |
+      |Robin   | Pa$$w0rd |
+    Then A new account should be created

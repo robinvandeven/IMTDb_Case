@@ -1,0 +1,15 @@
+Feature: Search for a movie
+
+  Background:
+    Given I am logged in
+      | Username | Password |
+      | test     | test     |
+
+  Scenario Outline: Search for movie title <Title>
+    And I want to search for the movie <Title>
+    Then I want to list all search results
+
+    Examples:
+    |Title                  |
+    | Star Wars             |
+    | Forrest Gump          |
